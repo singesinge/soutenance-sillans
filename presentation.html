@@ -128,7 +128,7 @@
   </section>
 
   <!-- CONCEPT — dispositif en 3 temps -->
-  <section class="slide slide--stats" data-slide="concept" data-theme="dark">
+  <section class="slide slide--stats slide--concept" data-slide="concept" data-theme="dark">
     <div class="slide__inner cols-slide">
       <div class="cols-head">
         <div class="cols-head__kicker fade" data-anim>Notre réponse</div>
@@ -138,17 +138,25 @@
         <div class="col col--turq">
           <div class="col__num">01</div>
           <h3 class="col__head">Avant la visite</h3>
-          <div class="col__label">Flyer en office de tourisme et réseaux sociaux : donner envie et préparer la visite.</div>
+          <div class="col__media">
+            <img class="concept-img" src="img/flyermockup.png" alt="Mockup du flyer">
+            <img class="concept-img" src="img/instapost.png" alt="Post Instagram">
+          </div>
         </div>
         <div class="col col--vert">
           <div class="col__num">02</div>
           <h3 class="col__head">Sur le sentier</h3>
-          <div class="col__label">L'application (carte, 14 POI, audio) et les panneaux à QR codes, complémentaires sur le terrain.</div>
+          <div class="col__media">
+            <img class="concept-img" src="img/homescreen.png" alt="Écran d'accueil de l'application">
+            <img class="concept-img" src="img/panneau1.png" alt="Panneau pédagogique">
+          </div>
         </div>
         <div class="col col--lime">
           <div class="col__num">03</div>
           <h3 class="col__head">Après la visite</h3>
-          <div class="col__label">Le quiz prolonge l'expérience et ancre les connaissances acquises.</div>
+          <div class="col__media col__media--one">
+            <img class="concept-img" src="img/quizscreen.png" alt="Écran du quiz">
+          </div>
         </div>
       </div>
     </div>
@@ -288,7 +296,7 @@
         <div class="panels__kicker fade" data-anim>À distribuer avant la visite</div>
         <h2 class="reveal" data-anim>Le flyer</h2>
       </div>
-      <div class="panels__stack panels__stack--2 panels__stack--flyers">
+      <div class="panels__stack">
         <div class="panels__item">
           <div class="media card" data-anim><img src="img/flyerrecto.png" alt="Flyer Visiter Sillans, recto"></div>
           <div class="panels__cap">Recto</div>
@@ -296,6 +304,10 @@
         <div class="panels__item">
           <div class="media card" data-anim><img src="img/flyerverso.png" alt="Flyer Visiter Sillans, verso"></div>
           <div class="panels__cap">Verso</div>
+        </div>
+        <div class="panels__item">
+          <div class="media card" data-anim><img src="img/flyermockup.png" alt="Flyer en situation"></div>
+          <div class="panels__cap">Mise en situation</div>
         </div>
       </div>
     </div>
@@ -402,15 +414,33 @@
       <div class="trade">
         <div class="trade__col trade__col--a">
           <h3 data-anim>Nos arbitrages</h3>
-          <div class="trade__card" data-anim><b>Leaflet → moteur SVG maison</b><span>Pour garantir le 100% hors-ligne et un design totalement maîtrisé.</span></div>
-          <div class="trade__card" data-anim><b>Visite 360° abandonnée</b><span>Retirée à la demande du commanditaire lors de la présentation du 28/04.</span></div>
-          <div class="trade__card" data-anim><b>Mascotte</b><span>D'abord une fauvette, puis une chauve-souris, et finalement un brin de mousse de la cascade : plus simple et attachant.</span></div>
+          <div class="trade__card" data-anim>
+            <svg class="trade__ico" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 16l7.36-5.73L21 9l-9-7-9 7 1.63 1.27L12 16zm0 2.54L4.62 12.81 3 14.07l9 7 9-7-1.63-1.27L12 18.54z"/></svg>
+            <div class="trade__txt"><b>Leaflet → moteur maison</b><span>100% hors-ligne, design maîtrisé.</span></div>
+          </div>
+          <div class="trade__card" data-anim>
+            <svg class="trade__ico" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 4.5C7 4.5 2.73 7.61 1 12c1.73 4.39 6 7.5 11 7.5s9.27-3.11 11-7.5c-1.73-4.39-6-7.5-11-7.5zM12 17c-2.76 0-5-2.24-5-5s2.24-5 5-5 5 2.24 5 5-2.24 5-5 5zm0-8a3 3 0 100 6 3 3 0 000-6z"/><path d="M2 3.5l18.5 18.5 1.5-1.5L3.5 2z"/></svg>
+            <div class="trade__txt"><b>Visite 360° abandonnée</b><span>Choix du commanditaire (28/04).</span></div>
+          </div>
+          <div class="trade__card" data-anim>
+            <svg class="trade__ico" viewBox="0 0 24 24" aria-hidden="true"><path d="M6.05 8.05c-2.73 2.73-2.73 7.15-.02 9.88 1.47-3.4 4.09-6.24 7.36-7.93-2.77 2.34-4.71 5.61-5.39 9.32 2.6 1.23 5.8.78 7.95-1.37C19.43 14.47 20 4 20 4S9.53 4.57 6.05 8.05z"/></svg>
+            <div class="trade__txt"><b>Mascotte</b><span>Fauvette, chauve-souris, puis la mousse.</span></div>
+          </div>
         </div>
         <div class="trade__col trade__col--b">
           <h3 data-anim>Difficultés → solutions</h3>
-          <div class="trade__card" data-anim><b>Aucun réseau sur site</b><span>Architecture offline-first : tout est pré-chargé par le Service Worker.</span></div>
-          <div class="trade__card" data-anim><b>Caler le GPS sur une carte dessinée</b><span>Calibration sur-mesure latitude/longitude vers pixels.</span></div>
-          <div class="trade__card" data-anim><b>Un peu de retard sur le planning</b><span>Repriorisation sur l'essentiel : l'application et la direction artistique.</span></div>
+          <div class="trade__card" data-anim>
+            <svg class="trade__ico" viewBox="0 0 24 24" aria-hidden="true"><path d="M2 3.05L5.07 6.1C3.6 6.82 2.22 7.78 1 9l1.99 2c1.24-1.24 2.67-2.16 4.2-2.77l2.24 2.24C7.81 10.89 6.27 11.73 5 13l1.99 2c1.36-1.36 3.14-2.04 4.92-2.06L18.98 20l1.27-1.27L3.29 1.79 2 3.05zM22.99 9C19.15 5.16 13.8 3.76 8.84 4.78l2.52 2.52c3.47-.17 6.99 1.05 9.63 3.7l2-2zm-4 4c-1.29-1.29-2.84-2.13-4.49-2.56l3.53 3.53.96-.97zM9 17l3 3 3-3c-1.65-1.66-4.34-1.66-6 0z"/></svg>
+            <div class="trade__txt"><b>Aucun réseau sur site</b><span>Tout pré-chargé, offline-first.</span></div>
+          </div>
+          <div class="trade__card" data-anim>
+            <svg class="trade__ico" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zm0 9.5a2.5 2.5 0 110-5 2.5 2.5 0 010 5z"/></svg>
+            <div class="trade__txt"><b>GPS sur carte dessinée</b><span>Calibration sur-mesure.</span></div>
+          </div>
+          <div class="trade__card" data-anim>
+            <svg class="trade__ico" viewBox="0 0 24 24" aria-hidden="true"><path d="M11.99 2C6.47 2 2 6.48 2 12s4.47 10 9.99 10C17.52 22 22 17.52 22 12S17.52 2 11.99 2zM12 20c-4.42 0-8-3.58-8-8s3.58-8 8-8 8 3.58 8 8-3.58 8-8 8zm.5-13H11v6l5.25 3.15.75-1.23-4.5-2.67z"/></svg>
+            <div class="trade__txt"><b>Retard sur le planning</b><span>Repriorisation sur l'essentiel.</span></div>
+          </div>
         </div>
       </div>
     </div>
