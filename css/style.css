@@ -364,6 +364,7 @@ body.hud-dark .nav,body.hud-dark .hint,body.hud-dark .nav__count{color:var(--bla
 .col__media{display:flex;flex-direction:column;gap:clamp(8px,1.2vw,16px);align-items:center;width:100%;margin-top:clamp(10px,1.4vw,18px);}
 .concept-img{display:block;width:auto;max-width:min(94%,230px);max-height:clamp(130px,22vh,250px);object-fit:contain;background:#fff;border-radius:10px;padding:6px;box-shadow:0 10px 26px rgba(0,0,0,.22);}
 .col__media--one .concept-img{max-height:clamp(190px,40vh,420px);max-width:min(96%,260px);}
+.col__cap2{margin-top:clamp(8px,1.1vw,15px);font-size:clamp(13px,1.3vw,19px);line-height:1.35;opacity:.96;max-width:24ch;}
 
 /* --- trade : icônes plates + texte court --- */
 .trade__card{display:flex;gap:clamp(10px,1.1vw,16px);align-items:flex-start;}
