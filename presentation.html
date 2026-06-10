@@ -1,0 +1,522 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Visiter Sillans — Soutenance</title>
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<!-- ============ LOADER ============ -->
+<div class="loader" id="loader">
+  <div class="loader__inner">
+    <div class="loader__title"><span>Visiter Sillans</span></div>
+    <div class="loader__bar"><i id="loaderBar"></i></div>
+    <div class="loader__count"><span id="loaderPct">0</span>%</div>
+  </div>
+</div>
+
+<!-- ============ BACKDROP (continuité / parallax) ============ -->
+<div class="backdrop" id="backdrop" aria-hidden="true">
+  <span class="blob blob--1"></span>
+  <span class="blob blob--2"></span>
+  <span class="blob blob--3"></span>
+  <span class="grain"></span>
+</div>
+
+<!-- ============ DECK ============ -->
+<main class="deck" id="deck">
+
+  <!-- 1 · HERO / TITRE -->
+  <section class="slide slide--hero" data-slide="hero" data-theme="dark">
+    <div class="slide__inner hero">
+      <div class="hero__eyebrow fade" data-anim>SAÉ 4 · BUT MMI · Département du Var</div>
+      <h1 class="hero__title reveal" data-anim>Visiter Sillans</h1>
+      <div class="hero__sub reveal" data-anim>L'équilibre d'un sanctuaire</div>
+      <div class="hero__logos" data-anim>
+        <div class="media media--logo" data-parallax="2"><img src="img/logo-text.png" alt="Logo Visiter Sillans"></div>
+        <div class="media media--logo" data-parallax="3"><img src="img/logodeptvar.png" alt="Logo Département du Var"></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- 2 · TEASER -->
+  <section class="slide slide--teaser" data-slide="teaser" data-theme="black">
+    <div class="slide__inner">
+      <div class="teaser__frame media" data-anim><video src="img/bigotestevan_rivegauche_A7S3_cascade01.MP4" autoplay muted loop playsinline></video></div>
+      <div class="teaser__label fade" data-anim>Le lieu. Et déjà, le problème.</div>
+    </div>
+  </section>
+
+  <!-- ====================== PARTIE 01 · LE CONTEXTE ====================== -->
+  <section class="slide slide--manifesto" data-slide="divider" data-theme="dark">
+    <div class="slide__inner manifesto">
+      <div class="manifesto__index fade" data-anim>Partie 01</div>
+      <h2 class="manifesto__title reveal" data-anim>Le contexte</h2>
+      <div class="manifesto__line" data-anim></div>
+    </div>
+  </section>
+
+  <!-- CHIFFRES / STATS — 3 colonnes colorées -->
+  <section class="slide slide--stats" data-slide="stats" data-theme="dark">
+    <div class="slide__inner cols-slide">
+      <div class="cols-head">
+        <div class="cols-head__kicker fade" data-anim>Les enjeux du site</div>
+        <h2 class="reveal" data-anim>Un site magnifique, et sous pression</h2>
+      </div>
+      <div class="cols cols--3">
+        <div class="col col--vert">
+          <div class="col__num"><span class="count" data-target="96000">0</span></div>
+          <div class="col__label">visiteurs sur juillet-août 2025</div>
+        </div>
+        <div class="col col--turq">
+          <div class="col__num"><span class="count" data-target="2500">0</span></div>
+          <div class="col__label">visiteurs par jour les jours de pic</div>
+        </div>
+        <div class="col col--lime">
+          <div class="col__num"><span class="count" data-target="369">0</span></div>
+          <div class="col__label">hectares d'Espace Naturel Sensible à protéger</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- PUBLICS VISÉS — 3 colonnes -->
+  <section class="slide slide--stats" data-slide="publics" data-theme="dark">
+    <div class="slide__inner cols-slide">
+      <div class="cols-head">
+        <div class="cols-head__kicker fade" data-anim>À qui l'on s'adresse</div>
+        <h2 class="reveal" data-anim>Trois publics, un même site</h2>
+      </div>
+      <div class="cols cols--3">
+        <div class="col col--vert">
+          <div class="col__ico"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M16 11c1.66 0 2.99-1.34 2.99-3S17.66 5 16 5c-1.66 0-3 1.34-3 3s1.34 3 3 3zm-8 0c1.66 0 2.99-1.34 2.99-3S9.66 5 8 5C6.34 5 5 6.34 5 8s1.34 3 3 3zm0 2c-2.33 0-7 1.17-7 3.5V19h14v-2.5c0-2.33-4.67-3.5-7-3.5zm8 0c-.29 0-.62.02-.97.05 1.16.84 1.97 1.97 1.97 3.45V19h6v-2.5c0-2.33-4.67-3.5-7-3.5z"/></svg></div>
+          <h3 class="col__head">Familles</h3>
+          <div class="col__label">Parents et enfants en sortie estivale. Découverte ludique, sécurité avant tout.</div>
+        </div>
+        <div class="col col--turq">
+          <div class="col__ico"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M13.5 5.5c1.1 0 2-.9 2-2s-.9-2-2-2-2 .9-2 2 .9 2 2 2zM9.8 8.9L7 23h2.1l1.8-8 2.1 2v6h2v-7.5l-2.1-2 .6-3C14.8 12 16.8 13 19 13v-2c-1.9 0-3.5-1-4.3-2.4l-1-1.6c-.4-.6-1-1-1.7-1-.3 0-.5.1-.8.1L6 8.3V13h2V9.6l1.8-.7"/></svg></div>
+          <h3 class="col__head">Jeunes adultes</h3>
+          <div class="col__label">Randonneurs et curieux, à l'aise avec le mobile. Expérience immersive et partage.</div>
+        </div>
+        <div class="col col--lime">
+          <div class="col__ico"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M5 13.18v4L12 21l7-3.82v-4L12 17l-7-3.82zM12 3L1 9l11 6 9-4.91V17h2V9L12 3z"/></svg></div>
+          <h3 class="col__head">Scolaires</h3>
+          <div class="col__label">Sorties pédagogiques encadrées. Apprentissage par le jeu et par le quiz.</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- PROBLÉMATIQUE DE COMMUNICATION -->
+  <section class="slide slide--problem" data-slide="problem" data-theme="gradient">
+    <div class="slide__inner problem">
+      <div class="problem__kicker fade" data-anim>La problématique de communication</div>
+      <h2 class="problem__q reveal" data-anim>Comment transformer 200 000 visiteurs en gardiens du sanctuaire&nbsp;: sans interdire, mais en faisant comprendre&nbsp;?</h2>
+      <p class="problem__sub fade" data-anim>Tension permanente : accueillir le public ↔ préserver un milieu fragile.</p>
+    </div>
+  </section>
+
+  <!-- ====================== PARTIE 02 · NOTRE CONCEPT ====================== -->
+  <section class="slide slide--manifesto" data-slide="divider" data-theme="dark">
+    <div class="slide__inner manifesto">
+      <div class="manifesto__index fade" data-anim>Partie 02</div>
+      <h2 class="manifesto__title reveal" data-anim>Notre concept</h2>
+      <div class="manifesto__line" data-anim></div>
+    </div>
+  </section>
+
+  <!-- CONCEPT — dispositif en 3 temps -->
+  <section class="slide slide--stats" data-slide="concept" data-theme="dark">
+    <div class="slide__inner cols-slide">
+      <div class="cols-head">
+        <div class="cols-head__kicker fade" data-anim>Notre réponse</div>
+        <h2 class="reveal" data-anim>Une médiation en trois temps</h2>
+      </div>
+      <div class="cols cols--3">
+        <div class="col col--turq">
+          <div class="col__num">01</div>
+          <h3 class="col__head">Avant la visite</h3>
+          <div class="col__label">Flyer en office de tourisme et réseaux sociaux : donner envie et préparer la visite.</div>
+        </div>
+        <div class="col col--vert">
+          <div class="col__num">02</div>
+          <h3 class="col__head">Sur le sentier</h3>
+          <div class="col__label">L'application (carte, 14 POI, audio) et les panneaux à QR codes, complémentaires sur le terrain.</div>
+        </div>
+        <div class="col col--lime">
+          <div class="col__num">03</div>
+          <h3 class="col__head">Après la visite</h3>
+          <div class="col__label">Le quiz prolonge l'expérience et ancre les connaissances acquises.</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ====================== PARTIE 03 · LA CRÉATION ====================== -->
+  <section class="slide slide--manifesto" data-slide="divider" data-theme="dark">
+    <div class="slide__inner manifesto">
+      <div class="manifesto__index fade" data-anim>Partie 03</div>
+      <h2 class="manifesto__title reveal" data-anim>La création</h2>
+      <div class="manifesto__line" data-anim></div>
+    </div>
+  </section>
+
+  <!-- ÉDITORIAL (image + texte) -->
+  <section class="slide slide--edito" data-slide="edito" data-theme="light">
+    <div class="slide__inner edito">
+      <div class="edito__text">
+        <div class="edito__kicker fade" data-anim>Notre parti-pris éditorial</div>
+        <h2 class="edito__quote reveal" data-anim>Qu'est-ce qui se cache derrière la beauté de Sillans&nbsp;?</h2>
+        <p class="edito__principe fade" data-anim>Comprendre pour respecter, pas interdire pour interdire.</p>
+        <p class="edito__ex fade" data-anim>
+          <span class="no">✗ « Baignade interdite »</span><br>
+          <span class="yes">✓ « L'eau de la Bresque est un laboratoire vivant : la baignade perturberait l'écosystème que vous êtes venu observer. »</span>
+        </p>
+      </div>
+      <div class="edito__media" data-parallax="4">
+        <div class="media edito__img" data-anim><img src="img/baignade.webp" alt="Baignade dans la Bresque"></div>
+        <div class="media media--plain edito__mascotte" data-anim data-parallax="8"><img src="img/mascotte-09.svg" alt="Mascotte Visiter Sillans"></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- LOGO — 3 colonnes colorées -->
+  <section class="slide slide--logo" data-slide="logo" data-theme="dark">
+    <div class="slide__inner cols-slide">
+      <div class="cols-head">
+        <div class="cols-head__kicker fade" data-anim>L'élément le plus apprécié par le commanditaire</div>
+        <h2 class="reveal" data-anim>Un logo, trois déclinaisons</h2>
+      </div>
+      <div class="cols cols--3">
+        <div class="col col--vert">
+          <div class="media media--plain logo-ph"><img src="img/logo-fond-vert.png" alt="Logo sur fond vert profond"></div>
+          <h3 class="col__cap">01 · Fond vert profond</h3>
+        </div>
+        <div class="col col--turq">
+          <div class="media media--plain logo-ph"><img src="img/logo-fond-turquoise.png" alt="Logo sur fond turquoise"></div>
+          <h3 class="col__cap">02 · Fond turquoise</h3>
+        </div>
+        <div class="col col--lime">
+          <div class="media media--plain logo-ph"><img src="img/logo-fond-lime.png" alt="Logo sur fond vert lime"></div>
+          <h3 class="col__cap">03 · Fond vert lime</h3>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- UNIVERS VISUEL / COULEURS -->
+  <section class="slide slide--colors" data-slide="colors" data-theme="gradient">
+    <div class="slide__inner colors">
+      <div class="colors__head">
+        <div class="colors__kicker fade" data-anim>Typographie &amp; couleurs</div>
+        <h2 class="colors__title reveal" data-anim>Une palette tirée du lieu</h2>
+      </div>
+      <div class="colors__typo">
+        <div class="colors__line" data-anim><span class="colors__din">DIN Condensed</span><small>Titres · condensée, affirmée</small></div>
+        <div class="colors__line" data-anim><span class="colors__body">Helvetica / Stone Sans</span><small>Texte courant · lecture rapide sur le sentier</small></div>
+      </div>
+      <div class="colors__row">
+        <div class="swatch" data-anim style="--c:#13433F"><span class="swatch__chip"></span><b>Vert profond</b><small>#13433F · vallon &amp; forêt · sécurité</small></div>
+        <div class="swatch" data-anim style="--c:#2CA6A4"><span class="swatch__chip"></span><b>Turquoise</b><small>#2CA6A4 · l'eau · histoire</small></div>
+        <div class="swatch" data-anim style="--c:#A6CE39"><span class="swatch__chip"></span><b>Vert lime</b><small>#A6CE39 · biodiversité</small></div>
+        <div class="swatch" data-anim style="--c:#DCC9B1"><span class="swatch__chip"></span><b>Sable</b><small>#DCC9B1 · la pierre, le tuf · géologie</small></div>
+        <div class="swatch" data-anim style="--c:#F7F6F2"><span class="swatch__chip swatch__chip--light"></span><b>Blanc cassé</b><small>#F7F6F2 · fond, lisible au soleil</small></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CAPTATION — GRILLE -->
+  <section class="slide slide--grid" data-slide="grid" data-theme="light">
+    <div class="slide__inner gridslide">
+      <div class="gridslide__head">
+        <h2 class="reveal" data-anim>Une vraie matière de terrain</h2>
+        <div class="gridslide__sub fade" data-anim>+100 photos · 46 vidéos · narrations &amp; ambiances audio · Sony A7S3</div>
+      </div>
+      <div class="mosaic">
+        <div class="media tile" data-anim><img src="img/poi-01.jpg" alt="Photo terrain 1"></div>
+        <div class="media tile" data-anim><img src="img/poi-02.jpg" alt="Photo terrain 2"></div>
+        <div class="media tile" data-anim><img src="img/poi-03.jpg" alt="Photo terrain 3"></div>
+        <div class="media tile" data-anim><video src="img/bigotestevan_rivegauche_A7S3_cascade04.MP4" autoplay muted loop playsinline></video></div>
+        <div class="media tile" data-anim><img src="img/poi-04.jpg" alt="Photo terrain 5"></div>
+        <div class="media tile" data-anim><img src="img/poi-05.jpg" alt="Photo terrain 6"></div>
+        <div class="audiobar" data-anim>
+          <button class="audiobar__play" id="audioPlay" aria-label="Lecture">
+            <svg class="ico-play" viewBox="0 0 24 24"><path d="M8 5v14l11-7z"/></svg>
+            <svg class="ico-pause" viewBox="0 0 24 24"><path d="M6 5h4v14H6zM14 5h4v14h-4z"/></svg>
+          </button>
+          <div class="audiobar__info">
+            <b>Et du son, les ambiances de chaque lieu captées sur place</b>
+            <div class="audiobar__track" id="audioTrack"><i id="audioProg"></i></div>
+          </div>
+          <span class="audiobar__time" id="audioTime">0:00</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- PANNEAUX -->
+  <section class="slide slide--panels" data-slide="panels" data-theme="light">
+    <div class="slide__inner panels">
+      <div class="panels__head">
+        <div class="panels__kicker fade" data-anim>In situ · sur le sentier</div>
+        <h2 class="reveal" data-anim>Les panneaux pédagogiques</h2>
+        <div class="panels__sub fade" data-anim>5 types conçus : grille info · question à volet · tactile · totem espèce · panneau-livre</div>
+      </div>
+      <div class="panels__stack">
+        <div class="panels__item">
+          <div class="media card" data-anim><img src="img/panneau1.png" alt="Panneau pédagogique, entrée de site"></div>
+          <div class="panels__cap">Panneau d'accueil, entrée de site</div>
+        </div>
+        <div class="panels__item">
+          <div class="media card" data-anim><img src="img/panneau2.png" alt="Totem espèce phare"></div>
+          <div class="panels__cap">Totem espèce phare du POI</div>
+        </div>
+        <div class="panels__item">
+          <div class="media card" data-anim><img src="img/panneaunotrecharte.png" alt="Panneau charte du visiteur"></div>
+          <div class="panels__cap">Notre charte du visiteur</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- FLYER -->
+  <section class="slide slide--panels" data-slide="panels" data-theme="light">
+    <div class="slide__inner panels">
+      <div class="panels__head">
+        <div class="panels__kicker fade" data-anim>À distribuer avant la visite</div>
+        <h2 class="reveal" data-anim>Le flyer</h2>
+      </div>
+      <div class="panels__stack panels__stack--2 panels__stack--flyers">
+        <div class="panels__item">
+          <div class="media card" data-anim><img src="img/flyerrecto.png" alt="Flyer Visiter Sillans, recto"></div>
+          <div class="panels__cap">Recto</div>
+        </div>
+        <div class="panels__item">
+          <div class="media card" data-anim><img src="img/flyerverso.png" alt="Flyer Visiter Sillans, verso"></div>
+          <div class="panels__cap">Verso</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- COMMUNICATION -->
+  <section class="slide slide--comm" data-slide="comm" data-theme="light">
+    <div class="slide__inner comm">
+      <div class="comm__text">
+        <div class="comm__kicker fade" data-anim>Avant et après la visite</div>
+        <h2 class="reveal" data-anim>La communication</h2>
+        <div class="comm__objs">
+          <div class="comm__obj" data-anim>
+            <b>01 · Faire connaître</b>
+            <p>Donner envie de découvrir Sillans et son application, avant même d'arriver sur site.</p>
+          </div>
+          <div class="comm__obj" data-anim>
+            <b>02 · Sensibiliser</b>
+            <p>Diffuser les bons gestes au-delà du sentier&nbsp;: la protection du site commence en ligne.</p>
+          </div>
+        </div>
+        <div class="comm__nets" data-anim>
+          <span class="net">Instagram</span>
+          <span class="net">TikTok</span>
+          <span class="net">Facebook</span>
+        </div>
+      </div>
+      <div class="comm__media">
+        <div class="media ph comm__shot" data-anim data-parallax="3"><span>Mockup compte Instagram</span></div>
+        <div class="media ph comm__shot" data-anim data-parallax="5"><span>Post Instagram</span></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ====================== PARTIE 04 · L'APPLICATION ====================== -->
+  <section class="slide slide--manifesto" data-slide="divider" data-theme="dark">
+    <div class="slide__inner manifesto">
+      <div class="manifesto__index fade" data-anim>Partie 04</div>
+      <h2 class="manifesto__title reveal" data-anim>L'application</h2>
+      <div class="manifesto__line" data-anim></div>
+    </div>
+  </section>
+
+  <!-- DÉMO APP (vidéo) -->
+  <section class="slide slide--app" data-slide="app" data-theme="dark">
+    <div class="slide__inner appvid">
+      <div class="appvid__head">
+        <h2 class="reveal" data-anim>L'application</h2>
+        <div class="app__lead fade" data-anim>Pensée mobile, entièrement hors-ligne. Démonstration en vidéo.</div>
+      </div>
+      <div class="media appvid__frame" data-anim>
+        <video src="img/VIDEOUX.mp4" controls playsinline preload="metadata"></video>
+      </div>
+    </div>
+  </section>
+
+  <!-- ====================== PARTIE 05 · LES COULISSES ====================== -->
+  <section class="slide slide--manifesto" data-slide="divider" data-theme="dark">
+    <div class="slide__inner manifesto">
+      <div class="manifesto__index fade" data-anim>Partie 05</div>
+      <h2 class="manifesto__title reveal" data-anim>Les coulisses</h2>
+      <div class="manifesto__line" data-anim></div>
+    </div>
+  </section>
+
+  <!-- ÉQUIPE & MÉTHODE -->
+  <section class="slide slide--team" data-slide="team" data-theme="light">
+    <div class="slide__inner team">
+      <div class="team__text">
+        <div class="team__head">
+          <div class="k fade" data-anim>Notre équipe de 5 étudiants MMI</div>
+          <h2 class="reveal" data-anim>Organisation &amp; méthode</h2>
+        </div>
+        <div class="team__list">
+          <div class="team__row" data-anim><b>Thomas Bout</b><span>Développement web &amp; direction artistique</span></div>
+          <div class="team__row" data-anim><b>Estevan Bigot</b><span>Captation photo &amp; vidéo (Sony A7S3)</span></div>
+          <div class="team__row" data-anim><b>Noam Reny-Douart</b><span>Développement web</span></div>
+          <div class="team__row" data-anim><b>Lina Ben Hammouda</b><span>Graphisme &amp; communication</span></div>
+          <div class="team__row" data-anim><b>Amir Barghouthi</b><span>Infographie &amp; audiovisuel</span></div>
+        </div>
+      </div>
+      <div class="method" data-anim>
+        <h3>Méthode &amp; outils</h3>
+        <ul>
+          <li>Travail découpé en 3 sprints : avril intensif, mai dev, juin finitions</li>
+          <li>Un rétroplanning fait à la main pour suivre l'avancement</li>
+          <li>Maquettes &amp; direction artistique sur Figma, design system commun</li>
+          <li>Versioning Git / GitHub, déploiement continu sur GitHub Pages</li>
+        </ul>
+        <div class="method__tools">
+          <span>Figma</span><span>Git / GitHub</span><span>Illustrator</span><span>After Effects</span><span>Premiere</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ARBITRAGES & DIFFICULTÉS -->
+  <section class="slide slide--trade" data-slide="trade" data-theme="dark">
+    <div class="slide__inner">
+      <div class="feat__head">
+        <div class="k fade" data-anim>Arbitrages &amp; obstacles</div>
+        <h2 class="reveal" data-anim>Ce qu'on a tranché, ce qu'on a résolu</h2>
+      </div>
+      <div class="trade">
+        <div class="trade__col trade__col--a">
+          <h3 data-anim>Nos arbitrages</h3>
+          <div class="trade__card" data-anim><b>Leaflet → moteur SVG maison</b><span>Pour garantir le 100% hors-ligne et un design totalement maîtrisé.</span></div>
+          <div class="trade__card" data-anim><b>Visite 360° abandonnée</b><span>Retirée à la demande du commanditaire lors de la présentation du 28/04.</span></div>
+          <div class="trade__card" data-anim><b>Mascotte</b><span>D'abord une fauvette, puis une chauve-souris, et finalement un brin de mousse de la cascade : plus simple et attachant.</span></div>
+        </div>
+        <div class="trade__col trade__col--b">
+          <h3 data-anim>Difficultés → solutions</h3>
+          <div class="trade__card" data-anim><b>Aucun réseau sur site</b><span>Architecture offline-first : tout est pré-chargé par le Service Worker.</span></div>
+          <div class="trade__card" data-anim><b>Caler le GPS sur une carte dessinée</b><span>Calibration sur-mesure latitude/longitude vers pixels.</span></div>
+          <div class="trade__card" data-anim><b>Un peu de retard sur le planning</b><span>Repriorisation sur l'essentiel : l'application et la direction artistique.</span></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ====================== PARTIE 06 · LE BILAN ====================== -->
+  <section class="slide slide--manifesto" data-slide="divider" data-theme="dark">
+    <div class="slide__inner manifesto">
+      <div class="manifesto__index fade" data-anim>Partie 06</div>
+      <h2 class="manifesto__title reveal" data-anim>Le bilan</h2>
+      <div class="manifesto__line" data-anim></div>
+    </div>
+  </section>
+
+  <!-- RÉUSSITES / LIMITES / AMÉLIORATIONS -->
+  <section class="slide slide--stats" data-slide="critique" data-theme="dark">
+    <div class="slide__inner cols-slide">
+      <div class="cols-head">
+        <div class="cols-head__kicker fade" data-anim>Prendre du recul</div>
+        <h2 class="reveal" data-anim>Réussites, limites, et après</h2>
+      </div>
+      <div class="cols cols--3">
+        <div class="col col--lime">
+          <h3 class="col__head">Réussites</h3>
+          <ul class="col__list">
+            <li>Un site abouti et peaufiné</li>
+            <li>+100 photos, vidéos et le son</li>
+            <li>Tous les audios des POI enregistrés</li>
+            <li>Carte maison, zéro dépendance</li>
+          </ul>
+        </div>
+        <div class="col col--turq">
+          <h3 class="col__head">Limites</h3>
+          <ul class="col__list">
+            <li>Panneaux pas tous maquettés</li>
+            <li>Pas de version multilingue</li>
+            <li>Calage GPS à valider sur le terrain</li>
+          </ul>
+        </div>
+        <div class="col col--vert">
+          <h3 class="col__head">Améliorations</h3>
+          <ul class="col__list">
+            <li>Tester en conditions réelles sur site</li>
+            <li>Décliner en plusieurs langues</li>
+            <li>Finaliser les 14 panneaux</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CONCLUSION — RÉCAP -->
+  <section class="slide slide--recap" data-slide="recap" data-theme="light">
+    <div class="slide__inner recap">
+      <h2 class="reveal" data-anim>Un dispositif complet</h2>
+      <div class="recap__chain">
+        <div class="recap__node" data-anim><b>Captation</b><small>Terrain, photo &amp; vidéo</small></div>
+        <span class="recap__arrow" data-anim>→</span>
+        <div class="recap__node" data-anim><b>Direction artistique</b><small>Logo, charte, mascotte</small></div>
+        <span class="recap__arrow" data-anim>→</span>
+        <div class="recap__node" data-anim><b>Application</b><small>Hors-ligne, 14 POI</small></div>
+        <span class="recap__arrow" data-anim>→</span>
+        <div class="recap__node" data-anim><b>Signalétique</b><small>Sur le sentier</small></div>
+      </div>
+      <p class="recap__punch reveal" data-anim>Comprendre,<br>c'est déjà protéger.</p>
+    </div>
+  </section>
+
+  <!-- CLÔTURE -->
+  <section class="slide slide--end" data-slide="end" data-theme="dark">
+    <div class="slide__inner end">
+      <h2 class="end__title reveal" data-anim>Merci</h2>
+      <div class="end__sig fade" data-anim>Sillans, l'équilibre d'un sanctuaire</div>
+      <div class="end__logos" data-anim>
+        <div class="media media--plain brand" data-parallax="3"><img src="img/Logo_MMI_-_Blanc.png" alt="Logo MMI"></div>
+        <div class="media media--logo brand" data-parallax="4"><img src="img/logodeptvar.png" alt="Logo Département du Var"></div>
+        <div class="media media--logo qr" data-parallax="6"><img src="img/qrcode.png" alt="QR code vers l'application"></div>
+      </div>
+    </div>
+  </section>
+
+</main>
+
+<!-- ============ WIPE (rideau de transition) ============ -->
+<div class="wipe" id="wipe" aria-hidden="true">
+  <i class="wipe__panel wipe__panel--1"></i>
+  <i class="wipe__panel wipe__panel--2"></i>
+  <i class="wipe__panel wipe__panel--3"></i>
+</div>
+
+<!-- ============ HUD ============ -->
+<div class="progress-line"><i id="progressLine"></i></div>
+
+<nav class="nav" id="nav">
+  <button class="nav__btn" id="prev" aria-label="Précédent">
+    <svg viewBox="0 0 24 24"><path d="M15 5l-7 7 7 7"/></svg>
+  </button>
+  <div class="nav__count"><span id="cur">01</span><i></i><span id="total">25</span></div>
+  <button class="nav__btn" id="next" aria-label="Suivant">
+    <svg viewBox="0 0 24 24"><path d="M9 5l7 7-7 7"/></svg>
+  </button>
+</nav>
+
+<div class="hint" id="hint">← → ou espace · F plein écran</div>
+
+<script src="vendor/gsap.min.js"></script>
+<script src="js/main.js"></script>
+</body>
+</html>
