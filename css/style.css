@@ -358,12 +358,10 @@ body.hud-dark .nav,body.hud-dark .hint,body.hud-dark .nav__count{color:var(--bla
 .lessons__card span{font-size:clamp(13px,1.25vw,18px);line-height:1.4;color:#dceae6;}
 
 /* --- slide concept : visuels dans les colonnes --- */
-.slide--concept .col,.slide--critique .col{justify-content:center;gap:clamp(8px,1.1vw,16px);padding:clamp(14px,1.9vw,32px);}
-.col__media{display:flex;flex-direction:column;gap:clamp(10px,1.5vw,22px);align-items:center;justify-content:center;width:100%;flex:1;min-height:0;}
-.concept-img{width:auto;max-width:96%;max-height:46%;object-fit:contain;background:#fff;border-radius:12px;padding:7px;box-shadow:0 12px 30px rgba(0,0,0,.24);}
-.col__media--one .concept-img{max-height:90%;max-width:96%;}
-.concept-ph{display:flex;align-items:center;justify-content:center;width:82%;max-width:96%;height:44%;background:rgba(255,255,255,.12);border:2px dashed rgba(255,255,255,.55);border-radius:12px;}
-.concept-ph span{font-family:var(--titre);text-transform:uppercase;letter-spacing:.06em;font-size:clamp(12px,1.2vw,16px);color:#fff;opacity:.9;text-align:center;padding:0 12px;}
+.slide--concept .col,.slide--critique .col{justify-content:center;gap:clamp(8px,1.6vh,20px);padding:clamp(12px,1.6vw,28px);}
+.col__media{display:flex;flex-direction:column;gap:clamp(8px,1.8vh,22px);align-items:center;justify-content:center;width:100%;}
+.concept-img{display:block;width:auto;height:auto;max-width:26vw;max-height:28vh;object-fit:contain;background:#fff;border-radius:12px;padding:6px;box-shadow:0 12px 30px rgba(0,0,0,.24);}
+.col__media--one .concept-img{max-width:28vw;max-height:58vh;}
 
 /* --- trade : icônes plates + texte court --- */
 .trade__card{display:flex;gap:clamp(10px,1.1vw,16px);align-items:flex-start;}
